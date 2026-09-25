@@ -462,7 +462,7 @@ const products = [
     details: ["Catraca 1/2", "8–32mm", "Manual"],
     link: "https://meli.la/2HmdjLi",
     images: ["zx13.jpg", "zx14.jpg", "zx15.jpg"]
-  }
+  },
   {
   name: "Escada Multifuncional de Alumínio 4x4 com 16 Degraus Dobrável e Articulada BotaFogo",
   category: "reforma",
