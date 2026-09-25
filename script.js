@@ -705,6 +705,7 @@ const products = [
   }
 ];
 
+
 const categories = {
   moveis: "Montar móveis e fazer pequenos reparos",
   parede: "Furar paredes e instalar coisas",
@@ -712,13 +713,16 @@ const categories = {
   todas: "Todas as ferramentas"
 };
 
+
 let selectedCategory = null;
 let selectedBudget = null;
 let ascending = true;
+let searchTerm = "";
 
 const galleryState = {};
 
 const $ = id => document.getElementById(id);
+
 
 function money(value) {
   return value.toLocaleString("pt-BR", {
@@ -726,6 +730,7 @@ function money(value) {
     currency: "BRL"
   });
 }
+
 
 function show(id) {
   ["home", "category", "budget", "catalog"].forEach(section => {
@@ -740,29 +745,39 @@ function show(id) {
   });
 }
 
+
 /* NAVEGAÇÃO */
 
 $("startBtn").onclick = () => {
   show("category");
 };
 
-/*
-  Remove automaticamente o card "Trabalhar profissionalmente"
-  caso ele ainda exista no HTML.
-*/
+
+/* Remove automaticamente o card profissional */
+
 document.querySelectorAll(".category-card").forEach(button => {
+
   if (button.dataset.category === "profissional") {
     button.remove();
     return;
   }
 
   button.onclick = () => {
+
     selectedCategory = button.dataset.category;
 
     if (selectedCategory === "todas") {
+
       selectedBudget = null;
+      searchTerm = "";
+
+      if ($("searchInput")) {
+        $("searchInput").value = "";
+      }
+
       renderProducts();
       show("catalog");
+
       return;
     }
 
@@ -770,19 +785,29 @@ document.querySelectorAll(".category-card").forEach(button => {
   };
 });
 
+
 $("allFromCategory").onclick = () => {
+
   selectedCategory = "todas";
   selectedBudget = null;
+  searchTerm = "";
+
+  if ($("searchInput")) {
+    $("searchInput").value = "";
+  }
 
   renderProducts();
   show("catalog");
 };
 
+
 $("backCategory").onclick = () => {
   show("category");
 };
 
+
 $("backHome").onclick = () => {
+
   if (selectedCategory === "todas" && selectedBudget === null) {
     show("category");
     return;
@@ -791,20 +816,26 @@ $("backHome").onclick = () => {
   show("budget");
 };
 
+
 /* ORÇAMENTO */
 
 document.querySelectorAll(".budget-card").forEach(button => {
+
   button.onclick = () => {
+
     selectedBudget = Number(button.dataset.budget);
 
     renderProducts();
     show("catalog");
   };
+
 });
+
 
 /* ORDENAÇÃO */
 
 $("sortBtn").onclick = () => {
+
   ascending = !ascending;
 
   $("sortBtn").textContent = ascending
@@ -814,9 +845,30 @@ $("sortBtn").onclick = () => {
   renderProducts();
 };
 
+
+/* PESQUISA */
+
+const searchInput = $("searchInput");
+
+if (searchInput) {
+
+  searchInput.addEventListener("input", event => {
+
+    searchTerm = event.target.value
+      .trim()
+      .toLowerCase();
+
+    renderProducts();
+
+  });
+
+}
+
+
 /* FILTRO DE PREÇO */
 
 function matchesBudget(product) {
+
   if (selectedBudget === null) {
     return true;
   }
@@ -836,9 +888,11 @@ function matchesBudget(product) {
   return product.price > 600;
 }
 
+
 /* GALERIA DOS CARDS */
 
 function changeImage(index, direction) {
+
   const state = galleryState[index];
   const image = document.getElementById("product-img-" + index);
 
@@ -853,9 +907,11 @@ function changeImage(index, direction) {
   image.src = state.images[state.current];
 }
 
+
 /* MODAL DA GALERIA */
 
 function openImageModal(index) {
+
   const state = galleryState[index];
 
   if (!state || state.images.length === 0) {
@@ -863,16 +919,24 @@ function openImageModal(index) {
   }
 
   $("modalImage").src = state.images[state.current];
+
   $("imageModal").dataset.productIndex = index;
+
   $("imageModal").classList.remove("hidden");
 }
+
 
 function closeImageModal() {
   $("imageModal").classList.add("hidden");
 }
 
+
 function changeModalImage(direction) {
-  const index = Number($("imageModal").dataset.productIndex);
+
+  const index = Number(
+    $("imageModal").dataset.productIndex
+  );
+
   const state = galleryState[index];
 
   if (!state || state.images.length === 0) {
@@ -892,23 +956,31 @@ function changeModalImage(direction) {
   }
 }
 
+
 $("modalClose").onclick = closeImageModal;
+
 
 $("modalPrev").onclick = () => {
   changeModalImage(-1);
 };
 
+
 $("modalNext").onclick = () => {
   changeModalImage(1);
 };
 
+
 $("imageModal").onclick = event => {
+
   if (event.target === $("imageModal")) {
     closeImageModal();
   }
+
 };
 
+
 document.addEventListener("keydown", event => {
+
   if ($("imageModal").classList.contains("hidden")) {
     return;
   }
@@ -924,17 +996,16 @@ document.addEventListener("keydown", event => {
   if (event.key === "ArrowRight") {
     changeModalImage(1);
   }
+
 });
+
 
 /* RENDERIZAÇÃO DO CATÁLOGO */
 
 function renderProducts() {
+
   let list = products.filter(product => {
-    /*
-      Os produtos antigos usam "cat".
-      Os produtos novos usam "category".
-      Aqui unificamos os dois formatos.
-    */
+
     const productCategory =
       product.cat || product.category;
 
@@ -943,25 +1014,60 @@ function renderProducts() {
       productCategory === selectedCategory ||
       productCategory === "todas";
 
-    return categoryMatches && matchesBudget(product);
+
+    /*
+      Pesquisa em:
+      - nome
+      - descrição
+      - categoria
+      - detalhes
+    */
+
+    const searchText = (
+
+      product.name + " " +
+      (product.desc || product.description || "") + " " +
+      (productCategory || "") + " " +
+      (product.details || []).join(" ")
+
+    ).toLowerCase();
+
+
+    const searchMatches =
+      searchTerm === "" ||
+      searchText.includes(searchTerm);
+
+
+    return (
+      categoryMatches &&
+      matchesBudget(product) &&
+      searchMatches
+    );
+
   });
 
+
   list.sort((a, b) => {
+
     return ascending
       ? a.price - b.price
       : b.price - a.price;
+
   });
+
 
   Object.keys(galleryState).forEach(key => {
     delete galleryState[key];
   });
+
 
   $("catalogTitle").textContent =
     selectedCategory === "todas"
       ? "Todas as ferramentas"
       : categories[selectedCategory];
 
-  var budgetText =
+
+  let budgetText =
     selectedBudget === 150
       ? "até R$ 150"
       : selectedBudget === 300
@@ -970,48 +1076,83 @@ function renderProducts() {
           ? "R$ 300 a R$ 600"
           : "acima de R$ 600";
 
-  $("catalogSubtitle").textContent =
-    selectedBudget === null
-      ? "Explore ferramentas organizadas para facilitar sua escolha."
-      : "Opções na faixa de " + budgetText + ".";
+
+  if (searchTerm !== "") {
+
+    $("catalogSubtitle").textContent =
+      "Resultados para: " + searchTerm;
+
+  } else {
+
+    $("catalogSubtitle").textContent =
+      selectedBudget === null
+        ? "Explore ferramentas organizadas para facilitar sua escolha."
+        : "Opções na faixa de " + budgetText + ".";
+
+  }
+
 
   $("count").textContent =
     list.length + " opção(ões) encontrada(s)";
 
+
   if (!list.length) {
+
     $("products").innerHTML =
       '<div class="product" style="grid-column:1/-1;padding:30px">' +
-        '<h3>Nenhuma ferramenta encontrada nessa categoria e faixa de preço.</h3>' +
-        '<p class="muted">Tente outra categoria ou outra faixa de orçamento.</p>' +
+
+        '<h3>Nenhuma ferramenta encontrada.</h3>' +
+
+        '<p class="muted">' +
+          'Tente outro termo de pesquisa ou remova alguns filtros.' +
+        '</p>' +
+
       '</div>';
 
     return;
   }
 
-  $("products").innerHTML = list.map((product, index) => {
-    const images = Array.isArray(product.images)
-      ? product.images
-      : [];
 
-    const firstImage = images[0];
+  $("products").innerHTML = list.map((product, index) => {
+
+    const images =
+      Array.isArray(product.images)
+        ? product.images
+        : [];
+
+
+    const firstImage =
+      images[0];
+
 
     galleryState[index] = {
-      images,
+      images: images,
       current: 0
     };
 
-    const productLink = product.link || "#";
+
+    const productLink =
+      product.link || "#";
+
 
     const productDescription =
-      product.desc || product.description || "";
+      product.desc ||
+      product.description ||
+      "";
+
 
     const productCategory =
-      product.cat || product.category;
+      product.cat ||
+      product.category;
 
-    var imageHtml = "";
+
+    let imageHtml = "";
+
 
     if (firstImage) {
+
       imageHtml =
+
         '<button class="image-arrow left" type="button" ' +
         'onclick="changeImage(' + index + ', -1)" ' +
         'aria-label="Imagem anterior">‹</button>' +
@@ -1019,18 +1160,24 @@ function renderProducts() {
         '<img ' +
         'id="product-img-' + index + '" ' +
         'src="' + firstImage + '" ' +
-        'alt="' + product.name + '"' +
+        'alt="' + product.name + '" ' +
         'onclick="openImageModal(' + index + ')"' +
         '>' +
 
         '<button class="image-arrow right" type="button" ' +
         'onclick="changeImage(' + index + ', 1)" ' +
         'aria-label="Próxima imagem">›</button>';
+
     } else {
-      imageHtml = product.emoji || "";
+
+      imageHtml =
+        product.emoji || "";
+
     }
 
+
     return (
+
       '<article class="product">' +
 
         '<div class="product-image">' +
@@ -1048,7 +1195,9 @@ function renderProducts() {
           '</h3>' +
 
           '<div class="stars">' +
-            '★ ' + product.rating + ' · avaliações (exemplo)' +
+            '★ ' +
+            product.rating +
+            ' · avaliações (exemplo)' +
           '</div>' +
 
           '<p class="desc">' +
@@ -1056,9 +1205,17 @@ function renderProducts() {
           '</p>' +
 
           '<div class="details">' +
+
             product.details.map(function(detail) {
-              return '<span class="pill">' + detail + '</span>';
+
+              return (
+                '<span class="pill">' +
+                  detail +
+                '</span>'
+              );
+
             }).join("") +
+
           '</div>' +
 
           '<div class="price">' +
@@ -1066,18 +1223,25 @@ function renderProducts() {
           '</div>' +
 
           '<a href="' + productLink + '"' +
+
             (
               product.link
                 ? ' target="_blank" rel="noopener noreferrer"'
                 : ' onclick="return false;"'
             ) +
+
           '>' +
+
             'Ver produto no Mercado Livre →' +
+
           '</a>' +
 
         '</div>' +
 
       '</article>'
+
     );
+
   }).join("");
+
     }
