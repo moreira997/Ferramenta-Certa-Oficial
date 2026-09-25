@@ -463,6 +463,104 @@ const products = [
     link: "https://meli.la/2HmdjLi",
     images: ["zx13.jpg", "zx14.jpg", "zx15.jpg"]
   }
+  {
+  name: "Escada Multifuncional de Alumínio 4x4 com 16 Degraus Dobrável e Articulada BotaFogo",
+  category: "reforma",
+  price: 554.39,
+  rating: 4.8,
+  description: "Escada multifuncional de alumínio, dobrável e articulada, indicada para diferentes tarefas de manutenção, construção e reforma.",
+  details: ["16 degraus", "4x4", "Alumínio", "Dobrável", "Articulada"],
+  images: ["P1.jpg", "P2.jpg", "P3.jpg"],
+  link: "https://meli.la/1idFdr4"
+},
+
+{
+  name: "Esmerilhadeira Bosch GWS 700 710W M14 Azul",
+  category: "reforma",
+  price: 301.85,
+  rating: 4.9,
+  description: "Esmerilhadeira Bosch de 710W para cortes, desbastes e trabalhos de acabamento em construção e reforma.",
+  details: ["710W", "Eixo M14", "Bosch", "Profissional"],
+  images: ["P4.jpg", "P5.jpg", "P6.jpg"],
+  link: "https://meli.la/2k5c1xp"
+},
+
+{
+  name: "Carrinho de Mão Chapa 20 Extraforte 65L Tramontina 77714/435",
+  category: "reforma",
+  price: 399.00,
+  rating: 4.8,
+  description: "Carrinho de mão extraforte Tramontina com capacidade de 65 litros, indicado para transporte de materiais em obras e reformas.",
+  details: ["65L", "Chapa 20", "Extraforte", "Tramontina"],
+  images: ["P7.jpg", "P8.jpg", "P9.jpg"],
+  link: "https://meli.la/1tTQWJF"
+},
+
+{
+  name: "Carrinho de Mão Metálico Reforçado Chapa 20 Obra Forte 60L The Black Tools",
+  category: "reforma",
+  price: 354.90,
+  rating: 4.4,
+  description: "Carrinho de mão metálico reforçado para transporte de materiais em obras, com capacidade de 60 litros e carga de até 125 kg.",
+  details: ["60L", "125kg", "Chapa 20", "Reforçado"],
+  images: ["P10.jpg", "P11.jpg", "P12.jpg"],
+  link: "https://meli.la/1xskbiC"
+},
+
+{
+  name: "Martelete Rompedor Furadeira de Impacto Allmind 1200W 5kg SDS Plus 3 em 1",
+  category: "reforma",
+  price: 310.21,
+  rating: 4.8,
+  description: "Martelete 3 em 1 de 1200W com sistema SDS Plus, indicado para perfuração e trabalhos em concreto, paredes e obras.",
+  details: ["1200W", "5kg", "SDS Plus", "3 em 1"],
+  images: ["P13.jpg", "P14.jpg", "P15.jpg"],
+  link: "https://meli.la/1ExPx8s"
+},
+
+{
+  name: "Martelete Perfurador Rompedor Professional 26mm 1300W SDS",
+  category: "reforma",
+  price: 354.86,
+  rating: 4.8,
+  description: "Martelete perfurador e rompedor de 1300W com sistema SDS, indicado para perfuração e trabalhos de impacto em obras.",
+  details: ["1300W", "26mm", "SDS", "Perfurador", "Rompedor"],
+  images: ["P16.jpg", "P17.jpg", "P18.jpg"],
+  link: "https://meli.la/1NLtY8a"
+},
+
+{
+  name: "Martelete Rompedor Perfurador SDS Brushless 4 em 1 48V Devilprex",
+  category: "reforma",
+  price: 479.97,
+  rating: 4.7,
+  description: "Martelete rompedor e perfurador brushless 4 em 1, indicado para diferentes trabalhos de construção e reforma.",
+  details: ["48V", "Brushless", "4 em 1", "SDS"],
+  images: ["P19.jpg", "P20.jpg", "P21.jpg"],
+  link: "https://meli.la/2CR266s"
+},
+
+{
+  name: "Martelete SDS Plus 1050W Wesco WS3162K",
+  category: "reforma",
+  price: 600.00,
+  rating: 4.8,
+  description: "Martelete Wesco de 1050W com sistema SDS Plus, indicado para perfuração e trabalhos de impacto em construção e reforma.",
+  details: ["1050W", "SDS Plus", "Wesco", "Profissional"],
+  images: ["P22.jpg", "P23.jpg", "P24.jpg"],
+  link: "https://meli.la/1EqJNwm"
+},
+
+{
+  name: "Martelete Rompedor Rotativo 1600W SDS Plus KNakasaki 3 Funções",
+  category: "reforma",
+  price: 589.99,
+  rating: 4.7,
+  description: "Martelete rompedor rotativo de 1600W com sistema SDS Plus e 3 funções para trabalhos de construção e reforma.",
+  details: ["1600W", "SDS Plus", "3 funções", "3600 BPM"],
+  images: ["P25.jpg", "P26.jpg", "P27.jpg"],
+  link: "https://meli.la/2GVVuc2"
+},
 ];
 
 const categories = {
