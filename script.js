@@ -10,6 +10,7 @@ const products = [
     link: "https://meli.la/13XoEVa",
     images: ["Q1.jpg", "Q2.jpg", "Q3.jpg"]
   },
+
   {
     name: "Jogo de Chaves Combinadas Gedore Robust 06-32mm 25 Peças",
     cat: "moveis",
@@ -21,6 +22,7 @@ const products = [
     link: "https://meli.la/2X9P7JX",
     images: ["Q4.jpg", "Q5.jpg", "Q6.jpg"]
   },
+
   {
     name: "Jogo de Ferramentas Vonder com 110 Peças",
     cat: "moveis",
@@ -32,6 +34,7 @@ const products = [
     link: "https://meli.la/132AZTM",
     images: ["Q7.jpg", "Q8.jpg", "Q9.jpg"]
   },
+
   {
     name: "Jogo de Soquete 57 Peças 1/4 Stels 1410155",
     cat: "moveis",
@@ -43,6 +46,7 @@ const products = [
     link: "https://meli.la/2Csb4EW",
     images: ["Q10.jpg", "Q11.jpg", "Q12.jpg"]
   },
+
   {
     name: "Jogo Multiferramentas Stanley STMT81243-840 110 Peças",
     cat: "moveis",
@@ -66,6 +70,7 @@ const products = [
     link: "https://meli.la/28YaHip",
     images: ["E1.jpg", "E2.jpg", "E3.jpg"]
   },
+
   {
     name: "Furadeira de Impacto Vonder 1/2\" 550W FIV 550N",
     cat: "reforma",
@@ -77,6 +82,7 @@ const products = [
     link: "https://meli.la/1WdUWea",
     images: ["E4.jpg", "E5.jpg", "E6.jpg"]
   },
+
   {
     name: "Furadeira de Impacto Profissional 3000 RPM 1200W Martelete",
     cat: "reforma",
@@ -88,6 +94,7 @@ const products = [
     link: "https://meli.la/13fNJ65",
     images: ["E7.jpg", "E8.jpg", "E9.jpg"]
   },
+
   {
     name: "Martelete Perfurador Rompedor Rotativo 2 Baterias Profissional",
     cat: "reforma",
@@ -99,6 +106,7 @@ const products = [
     link: "https://meli.la/1ihT3Vw",
     images: ["E10.jpg", "E11.jpg", "E12.jpg"]
   },
+
   {
     name: "Borboleta Profissional GBH-28D Corrente Doméstica Azul-Marinho",
     cat: "reforma",
@@ -110,6 +118,7 @@ const products = [
     link: "https://meli.la/1XkvX5L",
     images: ["E13.jpg", "E14.jpg", "E15.jpg"]
   },
+
   {
     name: "Martelete Perfurador Rompedor Professional 950W com Maleta",
     cat: "reforma",
@@ -133,6 +142,7 @@ const products = [
     link: "https://meli.la/2qtfpmH",
     images: ["W1.jpg", "W2.jpg", "W3.jpg"]
   },
+
   {
     name: "Jogo De Soquete Estriados 1/2 E 1/4 Com 94 Peças Stels Preto",
     cat: "moveis",
@@ -144,6 +154,7 @@ const products = [
     link: "https://meli.la/32bBz2m",
     images: ["W4.jpg", "W5.jpg", "W6.jpg"]
   },
+
   {
     name: "Jogo de Ferramentas 163 Peças com Maleta Completa Vonder Aço Cr-V",
     cat: "moveis",
@@ -155,6 +166,7 @@ const products = [
     link: "https://meli.la/2K6Aa5W",
     images: ["W7.jpg", "W8.jpg", "W9.jpg"]
   },
+
   {
     name: "Jogo De Soquetes Encaixe 1/4 3/8 1/2 Pol. 172 Peças Gedore Red",
     cat: "moveis",
@@ -166,6 +178,7 @@ const products = [
     link: "https://meli.la/17qs7xV",
     images: ["W10.jpg", "W11.jpg", "W12.jpg"]
   },
+
   {
     name: "Jogo De Ferramentas 150 Peças Maleta Mecânica Profissional",
     cat: "moveis",
@@ -205,6 +218,7 @@ const products = [
     link: "https://meli.la/2xzQepy",
     images: ["R1.jpg", "R2.jpg", "R3.jpg"]
   },
+
   {
     name: "Martelete Pneumático Rebarbador JMP150 com 4 Ponteiras JST Preto",
     cat: "reforma",
@@ -216,6 +230,7 @@ const products = [
     link: "https://meli.la/2TH68qE",
     images: ["R4.jpg", "R5.jpg", "R6.jpg"]
   },
+
   {
     name: "Martelete Pneumático 150mm Kit 7 Ponteiras PNW150MTK Preto",
     cat: "reforma",
@@ -227,6 +242,7 @@ const products = [
     link: "https://meli.la/2sLmBQi",
     images: ["R7.jpg", "R8.jpg", "R9.jpg"]
   },
+
   {
     name: "Martelete Pneumático Chapas Concreto 190mm com 5 Ponteiras",
     cat: "reforma",
@@ -238,6 +254,7 @@ const products = [
     link: "https://meli.la/12pKeuM",
     images: ["R10.jpg", "R11.jpg", "R12.jpg"]
   },
+
   {
     name: "Martelete Rebarbador Pneumático 190mm Rotta 376 Tipo Vonder",
     cat: "reforma",
@@ -261,6 +278,7 @@ const products = [
     link: "https://meli.la/1xtajAs",
     images: ["Zx16.jpg", "Zx17.jpg", "Zx18.jpg"]
   },
+
   {
     name: "Jogo Kit de Ferramentas Manuais Chave Catraca 1/2 8 a 32mm Cromo Vanádio BCS022L The Black Tools",
     cat: "moveis",
@@ -272,6 +290,7 @@ const products = [
     link: "https://meli.la/1AoqjdJ",
     images: ["zx19.jpg", "zx20.jpg", "zx21.jpg"]
   },
+
   {
     name: "Jogo De Ferramentas 40 Pçs Bit Torx Allen Multidentado Crv Zenite",
     cat: "moveis",
@@ -283,6 +302,7 @@ const products = [
     link: "https://meli.la/18SfVj4",
     images: ["zx22.jpg", "zx23.jpg", "zx24.jpg"]
   },
+
   {
     name: "Jogo De Chaves Combinadas Uso Profissional 17 Peças 6 A 22 Mm CrV Vonder",
     cat: "moveis",
@@ -294,6 +314,7 @@ const products = [
     link: "https://meli.la/2GJB7N9",
     images: ["zx25.jpg", "zx26.jpg", "zx27.jpg"]
   },
+
   {
     name: "Jogo De Soquetes Estriados Catraca 1/2 8 A 32mm Robust",
     cat: "moveis",
@@ -317,6 +338,7 @@ const products = [
     link: "https://meli.la/2Y9cAbb",
     images: ["wapk211.jpg", "wapk212.jpg", "wapk213.jpg"]
   },
+
   {
     name: "Furadeira de Impacto 1/2 750W Maleta 5 Brocas GSB 13 RE Bosch",
     cat: "parede",
@@ -328,6 +350,7 @@ const products = [
     link: "https://meli.la/1CQMfmW",
     images: ["bosch1.jpg", "bosch2.jpg", "bosch3.jpg"]
   },
+
   {
     name: "Kit Furadeira De Impacto Bosch Gsb 13 Re 750w 110v 33 Peças",
     cat: "parede",
@@ -339,6 +362,7 @@ const products = [
     link: "https://meli.la/1G18CAh",
     images: ["bk1.jpeg", "bk2.jpeg", "bk3.jpeg"]
   },
+
   {
     name: "Kit Furadeira Impacto Bosch Gsb 13 Re 220v 750w + 103 Peças",
     cat: "parede",
@@ -350,6 +374,7 @@ const products = [
     link: "https://meli.la/2vEUoar",
     images: ["bk4.jpg", "bk5.jpg", "bk6.jpg"]
   },
+
   {
     name: "Furadeira De Impacto Bosch 850w + Jogo De Brocas 300 Peças",
     cat: "parede",
@@ -361,6 +386,7 @@ const products = [
     link: "https://meli.la/2dFUDxq",
     images: ["mais1.jpg", "mais2.jpg", "mais3.jpg"]
   },
+
   {
     name: "Furadeira Parafusadeira Impacto Gsb 183-li 2 Baterias Bosch Cor Azul Frequência 50/60hz",
     cat: "parede",
@@ -372,6 +398,7 @@ const products = [
     link: "https://meli.la/2QuWjjM",
     images: ["mais4.jpg", "mais5.jpg", "mais6.jpg"]
   },
+
   {
     name: "Parafusadeira e Furadeira de Impacto 13mm 20V DEWALT DCD7781D2 Com 2 Baterias, Carregador e Maleta",
     cat: "parede",
@@ -419,6 +446,7 @@ const products = [
     link: "https://meli.la/2mMhv27",
     images: ["zx1.jpg", "zx2.jpg", "zx3.jpg"]
   },
+
   {
     name: "Kit Chaves Ferramentas Jogo Fenda Philips Catraca Soquete Allen 46 Peças Com Maleta Completa Quicko Vermelho",
     cat: "moveis",
@@ -430,6 +458,7 @@ const products = [
     link: "https://meli.la/31D1KaL",
     images: ["zx4.jpg", "zx5.jpg", "zx6.jpg"]
   },
+
   {
     name: "Maleta Estojo Kit Jogo 169 Ferramentas Caixa Completa Devilprex Preto",
     cat: "moveis",
@@ -441,6 +470,7 @@ const products = [
     link: "https://meli.la/1wtuqs1",
     images: ["zx7.jpg", "zx8.jpg", "zx9.jpg"]
   },
+
   {
     name: "Kit Jogo Ferramentas Alicate Universal Corte e Bico Martelo Chave De Fenda Philips Imantadas",
     cat: "moveis",
@@ -452,6 +482,7 @@ const products = [
     link: "https://meli.la/15mhs2L",
     images: ["zx10.jpg", "zx11.jpg", "zx12.jpg"]
   },
+
   {
     name: "Jogo Kit de Ferramentas Manuais Chave Catraca 1/2 8 a 32mm BCS022 The Black Tools Cor Amarelo",
     cat: "moveis",
@@ -463,104 +494,105 @@ const products = [
     link: "https://meli.la/2HmdjLi",
     images: ["zx13.jpg", "zx14.jpg", "zx15.jpg"]
   },
+
   {
-  name: "Escada Multifuncional de Alumínio 4x4 com 16 Degraus Dobrável e Articulada BotaFogo",
-  category: "reforma",
-  price: 554.39,
-  rating: 4.8,
-  description: "Escada multifuncional de alumínio, dobrável e articulada, indicada para diferentes tarefas de manutenção, construção e reforma.",
-  details: ["16 degraus", "4x4", "Alumínio", "Dobrável", "Articulada"],
-  images: ["P1.jpg", "P2.jpg", "P3.jpg"],
-  link: "https://meli.la/1idFdr4"
-},
+    name: "Escada Multifuncional de Alumínio 4x4 com 16 Degraus Dobrável e Articulada BotaFogo",
+    category: "reforma",
+    price: 554.39,
+    rating: 4.8,
+    description: "Escada multifuncional de alumínio, dobrável e articulada, indicada para diferentes tarefas de manutenção, construção e reforma.",
+    details: ["16 degraus", "4x4", "Alumínio", "Dobrável", "Articulada"],
+    images: ["P1.jpg", "P2.jpg", "P3.jpg"],
+    link: "https://meli.la/1idFdr4"
+  },
 
-{
-  name: "Esmerilhadeira Bosch GWS 700 710W M14 Azul",
-  category: "reforma",
-  price: 301.85,
-  rating: 4.9,
-  description: "Esmerilhadeira Bosch de 710W para cortes, desbastes e trabalhos de acabamento em construção e reforma.",
-  details: ["710W", "Eixo M14", "Bosch", "Profissional"],
-  images: ["P4.jpg", "P5.jpg", "P6.jpg"],
-  link: "https://meli.la/2k5c1xp"
-},
+  {
+    name: "Esmerilhadeira Bosch GWS 700 710W M14 Azul",
+    category: "reforma",
+    price: 301.85,
+    rating: 4.9,
+    description: "Esmerilhadeira Bosch de 710W para cortes, desbastes e trabalhos de acabamento em construção e reforma.",
+    details: ["710W", "Eixo M14", "Bosch", "Profissional"],
+    images: ["P4.jpg", "P5.jpg", "P6.jpg"],
+    link: "https://meli.la/2k5c1xp"
+  },
 
-{
-  name: "Carrinho de Mão Chapa 20 Extraforte 65L Tramontina 77714/435",
-  category: "reforma",
-  price: 399.00,
-  rating: 4.8,
-  description: "Carrinho de mão extraforte Tramontina com capacidade de 65 litros, indicado para transporte de materiais em obras e reformas.",
-  details: ["65L", "Chapa 20", "Extraforte", "Tramontina"],
-  images: ["P7.jpg", "P8.jpg", "P9.jpg"],
-  link: "https://meli.la/1tTQWJF"
-},
+  {
+    name: "Carrinho de Mão Chapa 20 Extraforte 65L Tramontina 77714/435",
+    category: "reforma",
+    price: 399.00,
+    rating: 4.8,
+    description: "Carrinho de mão extraforte Tramontina com capacidade de 65 litros, indicado para transporte de materiais em obras e reformas.",
+    details: ["65L", "Chapa 20", "Extraforte", "Tramontina"],
+    images: ["P7.jpg", "P8.jpg", "P9.jpg"],
+    link: "https://meli.la/1tTQWJF"
+  },
 
-{
-  name: "Carrinho de Mão Metálico Reforçado Chapa 20 Obra Forte 60L The Black Tools",
-  category: "reforma",
-  price: 354.90,
-  rating: 4.4,
-  description: "Carrinho de mão metálico reforçado para transporte de materiais em obras, com capacidade de 60 litros e carga de até 125 kg.",
-  details: ["60L", "125kg", "Chapa 20", "Reforçado"],
-  images: ["P10.jpg", "P11.jpg", "P12.jpg"],
-  link: "https://meli.la/1xskbiC"
-},
+  {
+    name: "Carrinho de Mão Metálico Reforçado Chapa 20 Obra Forte 60L The Black Tools",
+    category: "reforma",
+    price: 354.90,
+    rating: 4.4,
+    description: "Carrinho de mão metálico reforçado para transporte de materiais em obras, com capacidade de 60 litros e carga de até 125 kg.",
+    details: ["60L", "125kg", "Chapa 20", "Reforçado"],
+    images: ["P10.jpg", "P11.jpg", "P12.jpg"],
+    link: "https://meli.la/1xskbiC"
+  },
 
-{
-  name: "Martelete Rompedor Furadeira de Impacto Allmind 1200W 5kg SDS Plus 3 em 1",
-  category: "reforma",
-  price: 310.21,
-  rating: 4.8,
-  description: "Martelete 3 em 1 de 1200W com sistema SDS Plus, indicado para perfuração e trabalhos em concreto, paredes e obras.",
-  details: ["1200W", "5kg", "SDS Plus", "3 em 1"],
-  images: ["P13.jpg", "P14.jpg", "P15.jpg"],
-  link: "https://meli.la/1ExPx8s"
-},
+  {
+    name: "Martelete Rompedor Furadeira de Impacto Allmind 1200W 5kg SDS Plus 3 em 1",
+    category: "reforma",
+    price: 310.21,
+    rating: 4.8,
+    description: "Martelete 3 em 1 de 1200W com sistema SDS Plus, indicado para perfuração e trabalhos em concreto, paredes e obras.",
+    details: ["1200W", "5kg", "SDS Plus", "3 em 1"],
+    images: ["P13.jpg", "P14.jpg", "P15.jpg"],
+    link: "https://meli.la/1ExPx8s"
+  },
 
-{
-  name: "Martelete Perfurador Rompedor Professional 26mm 1300W SDS",
-  category: "reforma",
-  price: 354.86,
-  rating: 4.8,
-  description: "Martelete perfurador e rompedor de 1300W com sistema SDS, indicado para perfuração e trabalhos de impacto em obras.",
-  details: ["1300W", "26mm", "SDS", "Perfurador", "Rompedor"],
-  images: ["P16.jpg", "P17.jpg", "P18.jpg"],
-  link: "https://meli.la/1NLtY8a"
-},
+  {
+    name: "Martelete Perfurador Rompedor Professional 26mm 1300W SDS",
+    category: "reforma",
+    price: 354.86,
+    rating: 4.8,
+    description: "Martelete perfurador e rompedor de 1300W com sistema SDS, indicado para perfuração e trabalhos de impacto em obras.",
+    details: ["1300W", "26mm", "SDS", "Perfurador", "Rompedor"],
+    images: ["P16.jpg", "P17.jpg", "P18.jpg"],
+    link: "https://meli.la/1NLtY8a"
+  },
 
-{
-  name: "Martelete Rompedor Perfurador SDS Brushless 4 em 1 48V Devilprex",
-  category: "reforma",
-  price: 479.97,
-  rating: 4.7,
-  description: "Martelete rompedor e perfurador brushless 4 em 1, indicado para diferentes trabalhos de construção e reforma.",
-  details: ["48V", "Brushless", "4 em 1", "SDS"],
-  images: ["P19.jpg", "P20.jpg", "P21.jpg"],
-  link: "https://meli.la/2CR266s"
-},
+  {
+    name: "Martelete Rompedor Perfurador SDS Brushless 4 em 1 48V Devilprex",
+    category: "reforma",
+    price: 479.97,
+    rating: 4.7,
+    description: "Martelete rompedor e perfurador brushless 4 em 1, indicado para diferentes trabalhos de construção e reforma.",
+    details: ["48V", "Brushless", "4 em 1", "SDS"],
+    images: ["P19.jpg", "P20.jpg", "P21.jpg"],
+    link: "https://meli.la/2CR266s"
+  },
 
-{
-  name: "Martelete SDS Plus 1050W Wesco WS3162K",
-  category: "reforma",
-  price: 600.00,
-  rating: 4.8,
-  description: "Martelete Wesco de 1050W com sistema SDS Plus, indicado para perfuração e trabalhos de impacto em construção e reforma.",
-  details: ["1050W", "SDS Plus", "Wesco", "Profissional"],
-  images: ["P22.jpg", "P23.jpg", "P24.jpg"],
-  link: "https://meli.la/1EqJNwm"
-},
+  {
+    name: "Martelete SDS Plus 1050W Wesco WS3162K",
+    category: "reforma",
+    price: 600.00,
+    rating: 4.8,
+    description: "Martelete Wesco de 1050W com sistema SDS Plus, indicado para perfuração e trabalhos de impacto em construção e reforma.",
+    details: ["1050W", "SDS Plus", "Wesco", "Profissional"],
+    images: ["P22.jpg", "P23.jpg", "P24.jpg"],
+    link: "https://meli.la/1EqJNwm"
+  },
 
-{
-  name: "Martelete Rompedor Rotativo 1600W SDS Plus KNakasaki 3 Funções",
-  category: "reforma",
-  price: 589.99,
-  rating: 4.7,
-  description: "Martelete rompedor rotativo de 1600W com sistema SDS Plus e 3 funções para trabalhos de construção e reforma.",
-  details: ["1600W", "SDS Plus", "3 funções", "3600 BPM"],
-  images: ["P25.jpg", "P26.jpg", "P27.jpg"],
-  link: "https://meli.la/2GVVuc2"
-},
+  {
+    name: "Martelete Rompedor Rotativo 1600W SDS Plus KNakasaki 3 Funções",
+    category: "reforma",
+    price: 589.99,
+    rating: 4.7,
+    description: "Martelete rompedor rotativo de 1600W com sistema SDS Plus e 3 funções para trabalhos de construção e reforma.",
+    details: ["1600W", "SDS Plus", "3 funções", "3600 BPM"],
+    images: ["P25.jpg", "P26.jpg", "P27.jpg"],
+    link: "https://meli.la/2GVVuc2"
+  }
 ];
 
 const categories = {
@@ -690,7 +722,7 @@ function matchesBudget(product) {
 
 function changeImage(index, direction) {
   const state = galleryState[index];
-const image = document.getElementById("product-img-" + index);
+  const image = document.getElementById("product-img-" + index);
 
   if (!state || !image || state.images.length === 0) {
     return;
@@ -736,6 +768,7 @@ function changeModalImage(direction) {
   $("modalImage").src = state.images[state.current];
 
   const cardImage = $("product-img-" + index);
+
   if (cardImage) {
     cardImage.src = state.images[state.current];
   }
@@ -779,16 +812,23 @@ document.addEventListener("keydown", event => {
 
 function renderProducts() {
   let list = products.filter(product => {
+    /*
+      Os produtos antigos usam "cat".
+      Os produtos novos usam "category".
+      Aqui unificamos os dois formatos.
+    */
+    const productCategory =
+      product.cat || product.category;
+
     const categoryMatches =
-   selectedCategory === "todas" ||
-  product.category === selectedCategory ||
-  product.category === "todas";
-  
+      selectedCategory === "todas" ||
+      productCategory === selectedCategory ||
+      productCategory === "todas";
+
     return categoryMatches && matchesBudget(product);
   });
 
   list.sort((a, b) => {
-    
     return ascending
       ? a.price - b.price
       : b.price - a.price;
@@ -845,6 +885,22 @@ function renderProducts() {
 
     const productLink = product.link || "#";
 
+    /*
+      Compatibilidade com os dois formatos:
+      antigo: desc
+      novo: description
+    */
+    const productDescription =
+      product.desc || product.description || "";
+
+    /*
+      Compatibilidade com os dois formatos:
+      antigo: cat
+      novo: category
+    */
+    const productCategory =
+      product.cat || product.category;
+
     var imageHtml = "";
 
     if (firstImage) {
@@ -877,7 +933,7 @@ function renderProducts() {
         '<div class="product-body">' +
 
           '<div class="product-cat">' +
-            (categories[product.cat] || "Ferramenta") +
+            (categories[productCategory] || "Ferramenta") +
           '</div>' +
 
           '<h3>' +
@@ -889,7 +945,7 @@ function renderProducts() {
           '</div>' +
 
           '<p class="desc">' +
-            product.desc +
+            productDescription +
           '</p>' +
 
           '<div class="details">' +
