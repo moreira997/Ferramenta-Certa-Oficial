@@ -780,14 +780,15 @@ document.addEventListener("keydown", event => {
 function renderProducts() {
   let list = products.filter(product => {
     const categoryMatches =
-      selectedCategory === "todas" ||
-      product.cat === selectedCategory ||
-      product.cat === "todas";
-
-   return categoryMatches && matchesBudget(product);
+   selectedCategory === "todas" ||
+  product.category === selectedCategory ||
+  product.category === "todas";
+  
+    return categoryMatches && matchesBudget(product);
   });
 
   list.sort((a, b) => {
+    
     return ascending
       ? a.price - b.price
       : b.price - a.price;
