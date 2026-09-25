@@ -593,113 +593,122 @@ const products = [
     images: ["P25.jpg", "P26.jpg", "P27.jpg"],
     link: "https://meli.la/2GVVuc2"
   },
-{
-  name: "Serra Makita 4100NH3ZX Mármore com 2 Discos Diámetro 110mm 1300W",
-  category: "reforma",
-  rating: 4.9,
-  price: 638.26,
-  description: "Serra mármore Makita de 1300W, indicada para cortes em materiais de construção e acabamento.",
-  details: ["1300W", "110mm", "2 discos"],
-  images: ["L1.jpg", "L2.jpg", "L3.jpg"],
-  link: "https://meli.la/217Xzqc"
-},
-{
-  name: "Pressurizador De Água Lorenzetti Pl-20 350w 220v",
-  category: "reforma",
-  rating: 4.8,
-  price: 1079.97,
-  description: "Pressurizador de água Lorenzetti PL-20 de 350W e 220V.",
-  details: ["350W", "220V", "Lorenzetti"],
-  images: ["L4.jpg", "L5.jpg", "L6.jpg"],
-  link: "https://meli.la/2742Lgd"
-},
-{
-  name: "Pressurizador De Água Pl20 Lorenzetti 220v 350w",
-  category: "reforma",
-  rating: 4.8,
-  price: 997.05,
-  description: "Pressurizador de água Lorenzetti PL20 com potência de 350W e tensão de 220V.",
-  details: ["350W", "220V", "PL20"],
-  images: ["L7.jpg", "L8.jpg", "L9.jpg"],
-  link: "https://meli.la/26SpFNy"
-},
-{
-  name: "Pressurizador De Água 380w 36mca Vazão Máxima De 3900l/h",
-  category: "reforma",
-  rating: 4.8,
-  price: 632.61,
-  description: "Pressurizador de água de 380W com pressão de até 36 mca e vazão máxima de 3900 litros por hora.",
-  details: ["380W", "36 mca", "3900 L/h"],
-  images: ["L10.jpg", "L11.jpg", "L12.jpg"],
-  link: "https://meli.la/1jAG1bP"
-},
-{
-  name: "Betoneira 400 LT c/ Motor Monofasico CSM",
-  category: "reforma",
-  rating: 4.8,
-  price: 4783.74,
-  description: "Betoneira CSM de 400 litros com motor monofásico, indicada para obras e construção.",
-  details: ["400L", "Monofásica", "CSM"],
-  images: ["L13.jpg", "L14.jpg", "L15.jpg"],
-  link: "https://meli.la/2eBg9Po"
-},
-{
-  name: "Betoneira Maqtron 150l 220v 1/2cv",
-  category: "reforma",
-  rating: 4.6,
-  price: 2026.34,
-  description: "Betoneira Maqtron de 150 litros, motor de 1/2 CV e alimentação de 220V.",
-  details: ["150L", "1/2 CV", "220V"],
-  images: ["L16.jpg", "L17.jpg", "L18.jpg"],
-  link: "https://meli.la/2dBH42C"
-},
-{
-  name: "Betoneira Rental 200l 1cv Csm-71000995",
-  category: "reforma",
-  rating: 5.0,
-  price: 3690.89,
-  description: "Betoneira CSM Rental de 200 litros com motor de 1 CV, indicada para trabalhos de construção.",
-  details: ["200L", "1 CV", "CSM"],
-  images: ["L19.jpg", "L20.jpg", "L21.jpg"],
-  link: "https://meli.la/31b58BF"
-},
-{
-  name: "Betoneira Monofásica 1/2cv Menegotti MENEGOTTI-4001169KIT Cor Amarelo",
-  category: "reforma",
-  rating: 4.8,
-  price: 2490.00,
-  description: "Betoneira Menegotti monofásica com motor de 1/2 CV, indicada para mistura de concreto em obras.",
-  details: ["1/2 CV", "Monofásica", "Menegotti"],
-  images: ["L22.jpg", "L23.jpg", "L24.jpg"],
-  link: "https://meli.la/24guApq"
-},
-{
-  name: "Betoneira 150l 1/2cv Mono Kit De Segurança Rotterman",
-  category: "reforma",
-  rating: 4.6,
-  price: 1799.00,
-  description: "Betoneira de 150 litros com motor de 1/2 CV e kit de segurança Rotterman.",
-  details: ["150L", "1/2 CV", "Kit de segurança"],
-  images: ["L25.jpg", "L26.jpg", "L27.jpg"],
-  link: "https://meli.la/1DkAWEK"
-},
-{
-  name: "Betoneira 150l Motor 1/2cv 220v Maqtron",
-  category: "reforma",
-  rating: 5.0,
-  price: 2177.99,
-  description: "Betoneira Maqtron de 150 litros com motor de 1/2 CV e alimentação de 220V.",
-  details: ["150L", "1/2 CV", "220V"],
-  images: ["L28.jpg", "L29.jpg", "L30.jpg"],
-  link: "https://meli.la/1BWuoyi"
-},
+
+  {
+    name: "Serra Makita 4100NH3ZX Mármore com 2 Discos Diámetro 110mm 1300W",
+    category: "reforma",
+    rating: 4.9,
+    price: 638.26,
+    description: "Serra mármore Makita de 1300W, indicada para cortes em materiais de construção e acabamento.",
+    details: ["1300W", "110mm", "2 discos"],
+    images: ["L1.jpg", "L2.jpg", "L3.jpg"],
+    link: "https://meli.la/217Xzqc"
+  },
+
+  {
+    name: "Pressurizador De Água Lorenzetti Pl-20 350w 220v",
+    category: "reforma",
+    rating: 4.8,
+    price: 1079.97,
+    description: "Pressurizador de água Lorenzetti PL-20 de 350W e 220V.",
+    details: ["350W", "220V", "Lorenzetti"],
+    images: ["L4.jpg", "L5.jpg", "L6.jpg"],
+    link: "https://meli.la/2742Lgd"
+  },
+
+  {
+    name: "Pressurizador De Água Pl20 Lorenzetti 220v 350w",
+    category: "reforma",
+    rating: 4.8,
+    price: 997.05,
+    description: "Pressurizador de água Lorenzetti PL20 com potência de 350W e tensão de 220V.",
+    details: ["350W", "220V", "PL20"],
+    images: ["L7.jpg", "L8.jpg", "L9.jpg"],
+    link: "https://meli.la/26SpFNy"
+  },
+
+  {
+    name: "Pressurizador De Água 380w 36mca Vazão Máxima De 3900l/h",
+    category: "reforma",
+    rating: 4.8,
+    price: 632.61,
+    description: "Pressurizador de água de 380W com pressão de até 36 mca e vazão máxima de 3900 litros por hora.",
+    details: ["380W", "36 mca", "3900 L/h"],
+    images: ["L10.jpg", "L11.jpg", "L12.jpg"],
+    link: "https://meli.la/1jAG1bP"
+  },
+
+  {
+    name: "Betoneira 400 LT c/ Motor Monofasico CSM",
+    category: "reforma",
+    rating: 4.8,
+    price: 4783.74,
+    description: "Betoneira CSM de 400 litros com motor monofásico, indicada para obras e construção.",
+    details: ["400L", "Monofásica", "CSM"],
+    images: ["L13.jpg", "L14.jpg", "L15.jpg"],
+    link: "https://meli.la/2eBg9Po"
+  },
+
+  {
+    name: "Betoneira Maqtron 150l 220v 1/2cv",
+    category: "reforma",
+    rating: 4.6,
+    price: 2026.34,
+    description: "Betoneira Maqtron de 150 litros, motor de 1/2 CV e alimentação de 220V.",
+    details: ["150L", "1/2 CV", "220V"],
+    images: ["L16.jpg", "L17.jpg", "L18.jpg"],
+    link: "https://meli.la/2dBH42C"
+  },
+
+  {
+    name: "Betoneira Rental 200l 1cv Csm-71000995",
+    category: "reforma",
+    rating: 5.0,
+    price: 3690.89,
+    description: "Betoneira CSM Rental de 200 litros com motor de 1 CV, indicada para trabalhos de construção.",
+    details: ["200L", "1 CV", "CSM"],
+    images: ["L19.jpg", "L20.jpg", "L21.jpg"],
+    link: "https://meli.la/31b58BF"
+  },
+
+  {
+    name: "Betoneira Monofásica 1/2cv Menegotti MENEGOTTI-4001169KIT Cor Amarelo",
+    category: "reforma",
+    rating: 4.8,
+    price: 2490.00,
+    description: "Betoneira Menegotti monofásica com motor de 1/2 CV, indicada para mistura de concreto em obras.",
+    details: ["1/2 CV", "Monofásica", "Menegotti"],
+    images: ["L22.jpg", "L23.jpg", "L24.jpg"],
+    link: "https://meli.la/24guApq"
+  },
+
+  {
+    name: "Betoneira 150l 1/2cv Mono Kit De Segurança Rotterman",
+    category: "reforma",
+    rating: 4.6,
+    price: 1799.00,
+    description: "Betoneira de 150 litros com motor de 1/2 CV e kit de segurança Rotterman.",
+    details: ["150L", "1/2 CV", "Kit de segurança"],
+    images: ["L25.jpg", "L26.jpg", "L27.jpg"],
+    link: "https://meli.la/1DkAWEK"
+  },
+
+  {
+    name: "Betoneira 150l Motor 1/2cv 220v Maqtron",
+    category: "reforma",
+    rating: 5.0,
+    price: 2177.99,
+    description: "Betoneira Maqtron de 150 litros com motor de 1/2 CV e alimentação de 220V.",
+    details: ["150L", "1/2 CV", "220V"],
+    images: ["L28.jpg", "L29.jpg", "L30.jpg"],
+    link: "https://meli.la/1BWuoyi"
+  }
 ];
 
 const categories = {
   moveis: "Montar móveis e fazer pequenos reparos",
   parede: "Furar paredes e instalar coisas",
   reforma: "Construção e reforma",
-  profissional: "Trabalhar profissionalmente",
   todas: "Todas as ferramentas"
 };
 
@@ -737,7 +746,16 @@ $("startBtn").onclick = () => {
   show("category");
 };
 
+/*
+  Remove automaticamente o card "Trabalhar profissionalmente"
+  caso ele ainda exista no HTML.
+*/
 document.querySelectorAll(".category-card").forEach(button => {
+  if (button.dataset.category === "profissional") {
+    button.remove();
+    return;
+  }
+
   button.onclick = () => {
     selectedCategory = button.dataset.category;
 
@@ -934,7 +952,6 @@ function renderProducts() {
       : b.price - a.price;
   });
 
-  /* Limpa o estado antigo da galeria */
   Object.keys(galleryState).forEach(key => {
     delete galleryState[key];
   });
@@ -985,19 +1002,9 @@ function renderProducts() {
 
     const productLink = product.link || "#";
 
-    /*
-      Compatibilidade com os dois formatos:
-      antigo: desc
-      novo: description
-    */
     const productDescription =
       product.desc || product.description || "";
 
-    /*
-      Compatibilidade com os dois formatos:
-      antigo: cat
-      novo: category
-    */
     const productCategory =
       product.cat || product.category;
 
@@ -1012,7 +1019,7 @@ function renderProducts() {
         '<img ' +
         'id="product-img-' + index + '" ' +
         'src="' + firstImage + '" ' +
-        'alt="' + product.name + '" ' +
+        'alt="' + product.name + '"' +
         'onclick="openImageModal(' + index + ')"' +
         '>' +
 
@@ -1073,4 +1080,4 @@ function renderProducts() {
       '</article>'
     );
   }).join("");
-}
+    }
